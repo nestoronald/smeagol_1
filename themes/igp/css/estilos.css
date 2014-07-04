@@ -1,8 +1,8 @@
 body{margin:0px;padding:0px;font-family:Arial, Helvetica, sans-serif;font-size:12px; color:#4f4b4a;}
 
-.cabecera{background-image:url(../img/001.jpg);background-repeat:repeat-x;background-color:#cd840f;padding-top:10px;}
+.cabecera{background-image:url(/001.jpg);background-repeat:repeat-x;background-color:#cd840f;padding-top:10px;}
 
-.cabecera-perfil{background-image:url(../img/001b.jpg);background-repeat:repeat-x;background-color:#cd840f;padding-top:10px;}
+.cabecera-perfil{background-image:url(/001b.jpg);background-repeat:repeat-x;background-color:#cd840f;padding-top:10px;}
 
 .perfil-investigadores{float:left; width:652px; padding:4px 0px 0px 12px;}
 
@@ -10,26 +10,26 @@ body{margin:0px;padding:0px;font-family:Arial, Helvetica, sans-serif;font-size:1
 
 .contenedor-simple{width:960px;}
 
-.contenedor-simple1{width:960px; background-image:url(../img/001a.jpg);background-repeat:repeat-x;}
-.contenedor-simple2{width:980px; background-image:url(../img/006a.gif);background-repeat:repeat-y;}
+.contenedor-simple1{width:960px; background-image:url(/001a.jpg);background-repeat:repeat-x;}
+.contenedor-simple2{width:980px; background-image:url(/006a.gif);background-repeat:repeat-y;}
 
 .contenedor-logotipo{width:960px;text-align:left;padding-bottom:10px;}
 
-.contenedor-menu{width:940px;text-align:left;background-image:url(../img/004.gif);background-repeat:repeat-x;padding-top:6px;height:24px;font-weight:bold;color:#FFF;}
+.contenedor-menu{width:940px;text-align:left;background-image:url(/004.gif);background-repeat:repeat-x;padding-top:6px;height:24px;font-weight:bold;color:#FFF;}
 
 
-.contenedor-centro{background-image:url(../img/006.gif); background-position:center; background-repeat:repeat-y; background-color:#FFF; width:100%; min-height:800px; height:auto !important; height:800px;}
+.contenedor-centro{background-image:url(/006.gif); background-position:center; background-repeat:repeat-y; background-color:#FFF; width:100%; min-height:800px; height:auto !important; height:800px;}
 
 /*
 .contenedor-centro{width:100%; min-height:800px; height:auto !important;}
 */
-.contenedor-pie{background-image:url(../img/007.jpg); background-repeat:repeat-x; height:40px; color:#FFF; width:100%; padding-top:30px;}
+.contenedor-pie{background-image:url(/007.jpg); background-repeat:repeat-x; height:40px; color:#FFF; width:100%; padding-top:30px;}
 
 .columna-izquierda{float:left; width:180px;; padding:10px 20px 20px 20px; text-align:left;}
 
 .columna-derecha{float:left; width:640px; *margin-left:10px; padding:10px 40px 20px 40px; text-align:left;}
 
-.linea-separacion{background-image:url(../img/008.gif); height:21px; background-repeat:repeat-x;}
+.linea-separacion{background-image:url(/008.gif); height:21px; background-repeat:repeat-x;}
 
 
 /* MEN� SUPERIOR HORIZONTAL - El desplegable est� en la hoja de estilos "desplegable.css" */
@@ -156,7 +156,7 @@ a.resultado:hover{color:#000; font-weight:bold; text-decoration:underline;}
 
 .imagen-perfil{border:1px solid #cc8310; padding:3px;}
 
-.linea-separacion2{background-image:url(../img/009.gif); height:21px; background-repeat:repeat-x;}
+.linea-separacion2{background-image:url(/009.gif); height:21px; background-repeat:repeat-x;}
 
 .iconos-perfil{float:left; padding-left:10px;}
 
@@ -164,7 +164,7 @@ a.resultado:hover{color:#000; font-weight:bold; text-decoration:underline;}
 
 .nombre-perfil{float:left; width:395px;}
 
-.titulo-perfiles {width:935px;background-image:url(../img/004.gif);background-repeat:repeat-x;padding:3px 5px 0px 0px;height:27px;font-weight:bold;color:#FFF; float:left; z-index:3; font-size:14px; text-align:left;}
+.titulo-perfiles {width:935px;background-image:url(/004.gif);background-repeat:repeat-x;padding:3px 5px 0px 0px;height:27px;font-weight:bold;color:#FFF; float:left; z-index:3; font-size:14px; text-align:left;}
 
 /* APLICACIONES */
 .banner-aplicaciones{width:960px; height:60px;}
@@ -213,7 +213,7 @@ tr.impar img{color:#fdeed5;}
 .slider_arrow_left {bottom: 4px; cursor: pointer !important; float:left; height:13px; left:0px;	position: absolute;	width: 14px; z-index: 50 !important;}
 		
 /* left arrow image */
-.slider_arrow_left {background: url(../img/left_arrow.png) no-repeat top left;}
+.slider_arrow_left {background: url(/left_arrow.png) no-repeat top left;}
 
 /* RIGHT ARROW */
 		
@@ -221,7 +221,7 @@ tr.impar img{color:#fdeed5;}
 .slider_arrow_right{ bottom: 4px; cursor: pointer; float:left; height:13px; left:17px; position: absolute; width:14px; z-index: 50;}
 		
 /* Right arrow Background */
-.slider_arrow_right {background: url(../img/right_arrow.png) no-repeat top left;}
+.slider_arrow_right {background: url(/right_arrow.png) no-repeat top left;}
 
 /* SELECTORS */
 
@@ -232,7 +232,7 @@ tr.impar img{color:#fdeed5;}
 .slider_selector li, .slider_selector_dis li {
 			
 			display: block !important;
-			background: url(../img/slider_selector.png) no-repeat top left;
+			background: url(/slider_selector.png) no-repeat top left;
 			cursor: pointer;
 			float: left;
 			margin: 0 3px !important;
@@ -243,7 +243,7 @@ tr.impar img{color:#fdeed5;}
 		}
 		
 /* Sets the current selector */
-.slider_selector li.current, .slider_selector_dis li.current {background: url(../img/slider_selector_current.png) no-repeat top left;}
+.slider_selector li.current, .slider_selector_dis li.current {background: url(/slider_selector_current.png) no-repeat top left;}
 			
 	
 /* Disables the selectors */
