@@ -9,7 +9,7 @@ ul									{ list-style: none; }
 ul.dropdown                         { position: relative; }
 /*Para que se superponga al contenido de la página*/
 
-ul.dropdown                         { width: 951px;background-image:url(../img/004.gif);background-repeat:repeat-x;padding:0px 0px 0px 0px;height:30px;font-weight:bold;color:#FFF; float:left; z-index:100;}
+ul.dropdown                         { width: 951px;background-image:url(/004.gif);background-repeat:repeat-x;padding:0px 0px 0px 0px;height:30px;font-weight:bold;color:#FFF; float:left; z-index:100;}
 
 ul.dropdown li                      { font-weight: bold; float: left; zoom: 1;  text-align:left;}
 ul.dropdown a:hover		    { color: white; }
