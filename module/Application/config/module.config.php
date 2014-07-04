@@ -112,6 +112,7 @@ return array(
                                     __DIR__ . '/../../../themes/enterprise/css/images',
                                     __DIR__ . '/../../../themes/igp/img',
                                     __DIR__ . '/../../../themes/igp/img/banner',
+                                    __DIR__ . '/../../../themes/igp/css/img',
     				),
     				// este mapeo puede ser dinamico desde base de datos o recorriendo el directorio
     				'map' => array(
