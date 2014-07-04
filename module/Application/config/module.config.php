@@ -110,6 +110,7 @@ return array(
     				'paths' => array(
                                     __DIR__ . '/../public',
                                     __DIR__ . '/../../../themes/enterprise/css/images',
+                                    __DIR__ . '/../../../themes/igp/css/img',
     				),
     				// este mapeo puede ser dinamico desde base de datos o recorriendo el directorio
     				'map' => array(
@@ -119,6 +120,16 @@ return array(
                                     'themes/enterprise/js/jquery.jcarousel.js' => __DIR__ . '/../../../themes/enterprise/js/jquery.jcarousel.js',
                                     'themes/enterprise/js/jquery.pngFix.js' => __DIR__ . '/../../../themes/enterprise/js/jquery.pngFix.js',
                                     'themes/enterprise/js/js-fnc.js' => __DIR__ . '/../../../themes/enterprise/js/js-fnc.js',    						
+                                    
+                                    
+                                    'themes/igp/js/jquery-1.7.2.js' => __DIR__ . '/../../../themes/igp/js/jquery-1.7.2.js',
+                                    'themes/igp/js/jquery.dropdownPlain.js' => __DIR__ . '/../../../themes/igp/js/jquery.dropdownPlain.js',
+                                    'themes/igp/css/style_dropdowns.css' => __DIR__ . '/../../../themes/igp/css/style_dropdowns.css',
+                                    'themes/igp/css/style.css' => __DIR__ . '/../../../themes/igp/css/style.css',
+                                    'themes/igp/css/blueprint/print.css' => __DIR__ . '/../../../themes/igp/css/blueprint/print.css',
+                                    'themes/igp/css/blueprint/plugins/fancy-type/screen.css' => __DIR__ . '/../../../themes/igp/css/blueprint/plugins/fancy-type/screen.css',    						
+                                    'themes/igp/js/jquery-ui-1.8.17.custom.min.js' => __DIR__ . '/../../../themes/igp/js/jquery-ui-1.8.17.custom.min.js',    						
+                                    'themes/igp/js/jquery.cycle.all.js' => __DIR__ . '/../../../themes/igp/js/jquery.cycle.all.js',    						
     				),
     		),
     		'caching' => array(
