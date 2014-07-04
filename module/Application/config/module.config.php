@@ -120,7 +120,7 @@ return array(
                                     'themes/enterprise/js/jquery.jcarousel.js' => __DIR__ . '/../../../themes/enterprise/js/jquery.jcarousel.js',
                                     'themes/enterprise/js/jquery.pngFix.js' => __DIR__ . '/../../../themes/enterprise/js/jquery.pngFix.js',
                                     'themes/enterprise/js/js-fnc.js' => __DIR__ . '/../../../themes/enterprise/js/js-fnc.js',    						
-                                                                        
+                                                                                                    
                                     'themes/igp/js/jquery-1.7.2.js' => __DIR__ . '/../../../themes/igp/js/jquery-1.7.2.js',
                                     'themes/igp/js/jquery.dropdownPlain.js' => __DIR__ . '/../../../themes/igp/js/jquery.dropdownPlain.js',
                                     'themes/igp/css/style_dropdowns.css' => __DIR__ . '/../../../themes/igp/css/style_dropdowns.css',
