@@ -4,7 +4,7 @@ body{text-align:center;}
 .cabecera1{height:120px; background-image:url(/001c.jpg);background-repeat:repeat-x;}
 
 .contenedor-pie {
-    background-image: url("img/007.jpg");
+    background-image: url("/img/007.jpg");
     background-repeat: repeat-x;
     color: #FFFFFF;
     height: 70px;
