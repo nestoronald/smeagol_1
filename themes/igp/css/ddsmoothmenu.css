@@ -4,7 +4,7 @@ width: 100%;
 background: #414141; /*background of menu bar (default state)*/
 
 
-width: 951px;background-image:url(../img/004.gif);background-repeat:repeat-x;padding:0px 0px 0px 0px;height:30px;font-weight:bold;color:#FFF; float:left; z-index:3;
+width: 951px;background-image:url(/004.gif);background-repeat:repeat-x;padding:0px 0px 0px 0px;height:30px;font-weight:bold;color:#FFF; float:left; z-index:3;
 }
 
 .ddsmoothmenu ul{
