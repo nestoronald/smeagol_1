@@ -30,7 +30,8 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface
         $eventManager->attach('route', function($e) {
 
             // decide which theme to use by get parameter
-            $layout = 'igp/layout';
+            $layout = 'enterprise/layout';
+            //$layout = 'igp/layout';
             $e->getViewModel()->setTemplate($layout);
         });
     }
