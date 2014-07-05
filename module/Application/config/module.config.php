@@ -107,25 +107,25 @@ return array(
     'asset_manager' => array(
     		'resolver_configs' => array(
     				'paths' => array(
-    						__DIR__ . '/../public',
-    						 __DIR__ . '/../../../themes/enterprise/css/images',
+                                    __DIR__ . '/../public',
+                                    __DIR__ . '/../../../themes/enterprise/css/images',
     				),
     				// este mapeo puede ser dinamico desde base de datos o recorriendo el directorio
     				'map' => array(
-    						'themes/enterprise/css/style.css' => __DIR__ . '/../../../themes/enterprise/css/style.css',
-    						'themes/enterprise/css/ie6.css' => __DIR__ . '/../../../themes/enterprise/css/ie6.css',
-    				  	    'themes/enterprise/js/jquery-1.4.2.js' => __DIR__ . '/../../../themes/enterprise/js/jquery-1.4.2.js',
-    				  	    'themes/enterprise/js/jquery.jcarousel.js' => __DIR__ . '/../../../themes/enterprise/js/jquery.jcarousel.js',
-    				  	    'themes/enterprise/js/jquery.pngFix.js' => __DIR__ . '/../../../themes/enterprise/js/jquery.pngFix.js',
-    				  	    'themes/enterprise/js/js-fnc.js' => __DIR__ . '/../../../themes/enterprise/js/js-fnc.js',    						
+                                    'themes/enterprise/css/style.css' => __DIR__ . '/../../../themes/enterprise/css/style.css',
+                                    'themes/enterprise/css/ie6.css' => __DIR__ . '/../../../themes/enterprise/css/ie6.css',
+                                    'themes/enterprise/js/jquery-1.4.2.js' => __DIR__ . '/../../../themes/enterprise/js/jquery-1.4.2.js',
+                                    'themes/enterprise/js/jquery.jcarousel.js' => __DIR__ . '/../../../themes/enterprise/js/jquery.jcarousel.js',
+                                    'themes/enterprise/js/jquery.pngFix.js' => __DIR__ . '/../../../themes/enterprise/js/jquery.pngFix.js',
+                                    'themes/enterprise/js/js-fnc.js' => __DIR__ . '/../../../themes/enterprise/js/js-fnc.js',    						
     				),
     		),
     		'caching' => array(
 				'default' => array(
 					'cache'     => 'Filesystem',
 					'options' => array(
-                    	'dir' => __DIR__.'/../../../public/cache', // path/to/cache
-            		),
+                                        'dir' => __DIR__.'/../../../public/cache', // path/to/cache
+                                        ),
 				),
     		),
     ),
