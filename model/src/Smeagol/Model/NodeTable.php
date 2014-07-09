@@ -2,6 +2,8 @@
 namespace Smeagol\Model;
 
 use Zend\Db\TableGateway\TableGateway;
+// Class Select
+use Zend\Db\Sql\Select;
 
 class NodeTable
 {
@@ -18,6 +20,17 @@ class NodeTable
         return $resultSet;
     }
 
+    public function getNoticiasFront()
+    {
+    	// Realizando un select para obetner los nodos de tipo noticia
+    	// los tres últimos para la portada
+        $resultSet = $this->tableGateway->select(function (Select $select) {
+     		$select->where->equalTo('node_type_id', 2);
+     		$select->order('id DESC')->limit(3);
+		});
+        return $resultSet;
+    }
+    
     public function getNode($id)
     {
         $id  = (int) $id;

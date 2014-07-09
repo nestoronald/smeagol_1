@@ -1,8 +1,8 @@
 	
         <div class="post">
             <h3>Noticias</h3>
-            <?php foreach ($nodes as $new) : ?>
-                <p><a href="<?php echo $this->escapeHtml($new->url);?>"><?php echo $this->escapeHtml($new->title);?></a></p>             
+            <?php foreach ($noticias as $new) : ?>
+                <p><a href="<?php echo $this->escapeHtml($new->url); ?>"><?php echo $this->escapeHtml($new->title); ?></a></p>
             <?php endforeach; ?>
         </div>
         
