@@ -10,13 +10,16 @@ namespace Application;
 
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
+use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
+use Zend\ModuleManager\Feature\ConfigProviderInterface;
+
 // Add these import statements:
 use Smeagol\Model\Node;
 use Smeagol\Model\NodeTable;
+use Smeagol\Model\User;
+use Smeagol\Model\UserTable;
 use Zend\Db\ResultSet\ResultSet;
 use Zend\Db\TableGateway\TableGateway;
-use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
-use Zend\ModuleManager\Feature\ConfigProviderInterface;
 
 
 class Module implements AutoloaderProviderInterface, ConfigProviderInterface
@@ -69,6 +72,17 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface
     						$resultSetPrototype->setArrayObjectPrototype(new Node());
     						return new TableGateway('node', $dbAdapter, null, $resultSetPrototype);
     					},
+    					'Smeagol\Model\UserTable' =>  function($sm) {
+    						$tableGateway = $sm->get('UserTableGateway');
+    						$table = new UserTable($tableGateway);
+    						return $table;
+    					},
+    					'UserTableGateway' => function ($sm) {
+    						$dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
+    						$resultSetPrototype = new ResultSet();
+    						$resultSetPrototype->setArrayObjectPrototype(new User());
+    						return new TableGateway('user', $dbAdapter, null, $resultSetPrototype);
+    					},                                                
     			),
     	);
     }
