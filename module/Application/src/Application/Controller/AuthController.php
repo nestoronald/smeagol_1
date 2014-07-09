@@ -81,5 +81,24 @@ class AuthController extends AbstractActionController
         return array("message" => $message);
     }
     
+   public function logoutAction(){
+    	$auth = new AuthenticationService();
+    	if (!$auth->hasIdentity()) {
+    		$this->redirect()->toRoute('auth');
+    	}
+    	
+    	// Destruyendo la sesión
+        $auth->clearIdentity();
+        
+        // Direccionando al index
+        $this->redirect()->toRoute('home');
+        
+        // Deshabilitando el View
+        $response = $this->getResponse();
+        $response->setStatusCode(200);
+        $response->setContent("Hasta Pronto");
+        return $response;
+    }
+    
     
 }

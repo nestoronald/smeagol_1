@@ -15,6 +15,7 @@ use Zend\Db\TableGateway\TableGateway;
 
 class Module implements AutoloaderProviderInterface, ConfigProviderInterface
 {
+    /*
     public function onBootstrap(MvcEvent $e)
     {
         $e->getApplication()->getServiceManager()->get('translator');
@@ -28,7 +29,8 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface
             $e->getViewModel()->setTemplate($layout);
         });
     }
-
+    */
+    
     public function getAutoloaderConfig()
     {
         return array(
