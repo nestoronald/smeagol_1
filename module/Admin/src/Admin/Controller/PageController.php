@@ -36,7 +36,7 @@ class PageController extends AbstractActionController
 	 * @param \Zend\Stdlib\ResponseInterface $response
 	 * @return type
 	 * @throws \Page\Controller\Exception
-	 */
+	 
 	public function dispatch(\Zend\Stdlib\RequestInterface $request, \Zend\Stdlib\ResponseInterface $response = null)
 	{
 		$identifier = (string)$this->getEvent()->getRouteMatch()->getParam('action');
@@ -68,7 +68,8 @@ class PageController extends AbstractActionController
 		}
 	
 	}
-	
+	*/
+        
 	public function indexAction()
 	{
 		return new ViewModel(array(
@@ -114,7 +115,8 @@ class PageController extends AbstractActionController
                    $page->title = $request->getPost("titulo");
                    $page->content = $request->getPost("contenido");
                    $page->url = $request->getPost("url");
-
+                   $page->modified = date("Y-m-d H:i:s");
+                   
                    // Guardamos los datos
                    $pageTable->savePage($page);
 
