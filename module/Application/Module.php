@@ -52,6 +52,7 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface
                 
             // decide which theme to use by get parameter
             $layout = 'enterprise/layout';
+            //$layout = 'igp/layout';
             $e->getViewModel()->setTemplate($layout);
             //pasando la variable al Layout
             $e->getViewModel()->setVariable("is_login",$is_login);

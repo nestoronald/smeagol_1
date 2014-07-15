@@ -108,7 +108,12 @@ return array(
                 'label' => 'Contactenos',
                 'route' => 'page',
                 'action' => 'contactenos',
-            )
+            )/*,
+            array(
+                'label' => 'Login',
+                'route' => 'login',
+                'action' => '',
+            )*/
         )
     )
         )

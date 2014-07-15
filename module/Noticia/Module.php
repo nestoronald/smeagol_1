@@ -1,5 +1,5 @@
 <?php
-namespace Noticias;
+namespace Noticia;
 
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
@@ -9,7 +9,7 @@ use Zend\ModuleManager\Feature\ConfigProviderInterface;
 // Add these import statements:
 use Smeagol\Model\Node;
 use Smeagol\Model\NodeTable;
-use Noticias\Model\Noticias;
+use Noticia\Model\Noticia;
 use Zend\Db\ResultSet\ResultSet;
 use Zend\Db\TableGateway\TableGateway;
 
@@ -66,9 +66,9 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface
 				$resultSetPrototype->setArrayObjectPrototype(new Node());
 				return new TableGateway('node', $dbAdapter, null, $resultSetPrototype);
 			},
-			'Noticias\Model\Noticias' =>  function($sm) {
+			'Noticia\Model\Noticia' =>  function($sm) {
 				$tableGateway = $sm->get('NodeTableGateway');
-				$table = new Noticias($tableGateway);
+				$table = new Noticia($tableGateway);
 				return $table;
 			},
 		),

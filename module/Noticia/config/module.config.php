@@ -2,23 +2,23 @@
 return array(
     'controllers' => array(
         'invokables' => array(
-            'Noticias\Controller\Index' => 'Noticias\Controller\IndexController',
+            'Noticia\Controller\Index' => 'Noticia\Controller\IndexController',
         ),
     ),
     
     'router' => array(
         'routes' => array(
-            'noticias' => array(
+            'noticia' => array(
                 'type'    => 'segment',
                 'options' => array(
-                    'route'    => '/noticias[/:action][/:id]',
+                    'route'    => '/noticia[/:action][/:id]',
                     'constraints' => array(
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                         'id'     => '[0-9]+',
                     ),
                     'defaults' => array(
-                    	'__NAMESPACE__' => 'Noticias\Controller',
-                        'controller' => 'Noticias\Controller\Index',
+                    	'__NAMESPACE__' => 'Noticia\Controller',
+                        'controller' => 'Noticia\Controller\Index',
                         'action'     => 'index',
                     ),
                 ),
@@ -27,7 +27,7 @@ return array(
     ),
 	'view_manager' => array(
 			'template_path_stack' => array(
-					'noticias' => __DIR__ . '/../view',
+					'noticia' => __DIR__ . '/../view',
 			),
 	),
 );

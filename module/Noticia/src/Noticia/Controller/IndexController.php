@@ -1,9 +1,9 @@
 <?php
 
-namespace Noticias\Controller;
+namespace Noticia\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
-use Noticias\Model\Noticias;
+use Noticia\Model\Noticia;
 
 class IndexController extends AbstractActionController
 {
@@ -11,20 +11,20 @@ class IndexController extends AbstractActionController
      * Noticias
      * @var Noticias\Model\Noticias
      */
-    protected $_noticias;
+    protected $_noticia;
 
     /**
      * Get Noticias object
      * @return Noticias\Model\Noticias
      */
-    public function getNoticias()
+    public function getNoticia()
     {
-        if (!$this->_noticias) {
+        if (!$this->_noticia) {
             $sm = $this->getServiceLocator();
-            $this->_noticias = $sm->get('Noticias\Model\Noticias');
+            $this->_noticia = $sm->get('Noticia\Model\Noticia');
         }
 
-        return $this->_noticias;
+        return $this->_noticia;
     }
     
     /**
@@ -40,20 +40,20 @@ class IndexController extends AbstractActionController
     public function dispatch(\Zend\Stdlib\RequestInterface $request, \Zend\Stdlib\ResponseInterface $response = null)
     {
         $identifier = (string)$this->getEvent()->getRouteMatch()->getParam('action');
-        $identifier = "noticias/". $identifier;
-        $noticias = $this->getNoticias();
+        $identifier = "noticia/". $identifier;
+        $noticia = $this->getNoticia();
         
         try {
-            $noticias = $noticias->getNoticiasByIdentifier($identifier);
+            $noticia = $noticia->getNoticiaByIdentifier($identifier);
             
             // get the renderer to manipulate the title
             $renderer = $this->getServiceLocator()->get('Zend\View\Renderer\PhpRenderer');
             
             // set the noticias title in the html head
-            $renderer->headTitle($noticias->title);
+            $renderer->headTitle($noticia->title);
             
             // write the models content to the websites content
-            $this->layout()->content = '<h1>' . $noticias->title . '</h1>' . $noticias->content;
+            $this->layout()->content = '<h1>' . $noticia->title . '</h1>' . $noticia->content;
         } catch(\Exception $ex) {
             // if we are on development, show the exception,
             // if not (we are in production) show the 404 noticias

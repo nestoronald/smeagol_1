@@ -1,11 +1,11 @@
 <?php
-namespace Noticias\Model;
+namespace Noticia\Model;
 use Smeagol\Model\NodeTable;
 use Zend\Db\TableGateway\TableGateway;
 // Class Select
 use Zend\Db\Sql\Select;
 
-class Noticias extends NodeTable 
+class Noticia extends NodeTable 
 {
 	public function __construct(TableGateway $tableGateway)
 	{
@@ -22,13 +22,13 @@ class Noticias extends NodeTable
         	return $resultSet;
 	}
 
-	public function getNoticias($id)
+	public function getNoticia($id)
 	{
 		return $this->getNode($id);
 	}
 	
 	// esto permiter la página de acuerdo al url
-	public function getNoticiasByIdentifier($identifier)
+	public function getNoticiaByIdentifier($identifier)
 	{
 		$rowset = $this->tableGateway->select(array('url' => $identifier));
 		$row = $rowset->current();
