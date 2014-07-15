@@ -19,7 +19,7 @@ class Alias extends Http\Segment {
         $path = $uri->getPath();
 
         //la traducción del alias al Url se cargará desde la base de datos
-        if ($path == '/nosotros') {
+        if ($path == '/nosotros/somos/los/tigres/de/zend/framework') {
             $uri->setPath('/node/1');
             $request->setUri($uri);           
         }

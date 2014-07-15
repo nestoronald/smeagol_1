@@ -1,6 +1,11 @@
 <?php
 
 return array(
+    'service_manager' => array(
+        'factories' => array(
+            'admin_menus' => 'Admin\Navigation\Service\AdminMenus'
+        ),
+    ),
     'controllers' => array(
         'invokables' => array(
             'Admin\Controller\Index' => 'Admin\Controller\IndexController',
