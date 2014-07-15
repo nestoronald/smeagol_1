@@ -20,37 +20,40 @@ return array(
                     ),
                 ),
             ),
-            'auth' => array(
+            'logout' => array(
                 'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(
-                    'route' => '/auth',
+                    'route' => '/logout',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Auth',
+                        'action' => 'logout',
+                    ),
+                ),
+            ),
+            'login' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route' => '/login',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Auth',
+                        'action' => 'login',
+                    ),
+                ),
+            ),
+            'auth' => array(
+                'type' => 'segment',
+                'options' => array(
+                    'route' => '/auth[/:action]',
+                    'constraints' => array(
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                    ),
                     'defaults' => array(
                         'controller' => 'Application\Controller\Auth',
                         'action' => 'index',
                     ),
                 ),
             ),
-            'logout' => array(
-                            'type' => 'Zend\Mvc\Router\Http\Literal',
-                            'options' => array(
-                                            'route'    => '/logout',
-                                            'defaults' => array(
-                                                            'controller' => 'Application\Controller\Auth',
-                                                            'action'     => 'logout',
-                                            ),
-                            ),
-            ),    
-            'login' => array(
-                    'type' => 'Zend\Mvc\Router\Http\Literal',
-                    'options' => array(
-                            'route'    => '/login',
-                            'defaults' => array(
-                                    'controller' => 'Application\Controller\Auth',
-                                    'action'     => 'login',
-                            ),
-                    ),  
-            ), 
-//Alias de Urls
+            //Alias de Urls
             'node' => array(
                 'type' => 'Application\Router\Alias',
                 'options' => array(
@@ -66,36 +69,6 @@ return array(
                     ),
                 ),
                 'may_terminate' => true,
-            ),
-            // The following is a route to simplify getting started creating
-            // new controllers and actions without needing to create a new
-            // module. Simply drop new controllers in, and you can access them
-            // using the path /application/:controller/:action
-            'application' => array(
-                'type' => 'Literal',
-                'options' => array(
-                    'route' => '/application',
-                    'defaults' => array(
-                        '__NAMESPACE__' => 'Application\Controller',
-                        'controller' => 'Index',
-                        'action' => 'index',
-                    ),
-                ),
-                'may_terminate' => true,
-                'child_routes' => array(
-                    'default' => array(
-                        'type' => 'Segment',
-                        'options' => array(
-                            'route' => '/[:controller[/:action]]',
-                            'constraints' => array(
-                                'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                                'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                            ),
-                            'defaults' => array(
-                            ),
-                        ),
-                    ),
-                ),
             ),
         ),
     ),
