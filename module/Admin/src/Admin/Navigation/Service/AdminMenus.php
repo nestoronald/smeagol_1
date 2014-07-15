@@ -35,10 +35,10 @@ class AdminMenus extends DefaultNavigationFactory {
                 array(
                     'label' => 'Noticias',
                     'route' => 'admin',
-                    'controller' => 'noticias',
+                    'controller' => 'noticia',
                     'action' => 'index',
                     'params' => array(
-                        'link' => '/admin/noticias',
+                        'link' => '/admin/noticia',
                     ),
                 ),
                 array(
