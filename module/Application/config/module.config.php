@@ -49,7 +49,24 @@ return array(
                                     'action'     => 'login',
                             ),
                     ),  
-            ),              
+            ), 
+//Alias de Urls
+            'node' => array(
+                'type' => 'Application\Router\Alias',
+                'options' => array(
+                    'route' => '/node[/:id]',
+                    'constraints' => array(
+                        'id' => '[0-9]+'
+                    ),
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Application\Controller',
+                        'controller' => 'Index',
+                        'action' => 'node',
+                        'id' => '0'
+                    ),
+                ),
+                'may_terminate' => true,
+            ),
             // The following is a route to simplify getting started creating
             // new controllers and actions without needing to create a new
             // module. Simply drop new controllers in, and you can access them
@@ -90,6 +107,9 @@ return array(
         'aliases' => array(
             'translator' => 'MvcTranslator',
         ),
+        'factories' => array(
+            'primary_menus' => 'Application\Navigation\Service\PrimaryMenus',
+        ),
     ),
     'translator' => array(
         'locale' => 'en_US',
@@ -105,6 +125,7 @@ return array(
         'invokables' => array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
             'Application\Controller\Auth' => 'Application\Controller\AuthController',
+            'Application\Router\Alias' => 'Application\Router\Alias',
         ),
     ),
     'view_manager' => array(

@@ -26,6 +26,7 @@ return array(
         )
     ),
     'navigation' => array(
+        'admin'=>array(), 
         'default' => array(
             array(
                 'label' => 'Inicio',
@@ -108,12 +109,7 @@ return array(
                 'label' => 'Contactenos',
                 'route' => 'page',
                 'action' => 'contactenos',
-            )/*,
-            array(
-                'label' => 'Login',
-                'route' => 'login',
-                'action' => '',
-            )*/
+            )
         )
     )
         )
