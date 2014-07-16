@@ -39,6 +39,25 @@ return array(
             'paths' => array(
                 __DIR__ . '/../public',
             ),
+            'map' => array(
+                'elfinder/css/elfinder.min.css' => __DIR__ . '/../library/elfinder/css/elfinder.min.css',
+                'elfinder/css/theme.css' => __DIR__ . '/../library/elfinder/css/theme.css',
+                'elfinder/js/elfinder.min.js' => __DIR__ . '/../library/elfinder/js/elfinder.min.js',
+                'elfinder/js/i18n/elfinder.es.js' => __DIR__ . '/../library/elfinder/js/i18n/elfinder.es.js',
+                'elfinder/img/arrows-active.png' => __DIR__ . '/../library/elfinder/img/arrows-active.png',
+                'elfinder/img/arrows-normal.png' => __DIR__ . '/../library/elfinder/img/arrows-normal.png',
+                'elfinder/img/crop.gif' => __DIR__ . '/../library/elfinder/img/crop.gif',
+                'elfinder/img/dialogs.png' => __DIR__ . '/../library/elfinder/img/dialogs.png',
+                'elfinder/img/icons-big.png' => __DIR__ . '/../library/elfinder/img/icons-big.png',
+                'elfinder/img/icons-small.png' => __DIR__ . '/../library/elfinder/img/arrows-active.png',
+                'elfinder/img/logo.png' => __DIR__ . '/../library/elfinder/img/logo.png',
+                'elfinder/img/progress.gif' => __DIR__ . '/../library/elfinder/img/progress.gif',
+                'elfinder/img/quicklook-bg.png' => __DIR__ . '/../library/elfinder/img/quicklook-bg.png',
+                'elfinder/img/quicklook-icons.png' => __DIR__ . '/../library/elfinder/img/quicklook-icons.png',
+                'elfinder/img/resize.png' => __DIR__ . '/../library/elfinder/img/resize.png',
+                'elfinder/img/spinner-mini.gif' => __DIR__ . '/../library/elfinder/img/spinner-mini.gif',
+                'elfinder/img/toolbar.png' => __DIR__ . '/../library/elfinder/img/toolbar.png',
+            ),
         ),
         'caching' => array(
             'default' => array(
